@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/eventos', 'EventoController@index');
+Route::get('/evento/view/{evento}', 'EventoController@show');
+Route::get('/evento/edit/{evento}', 'EventoController@edit');
+
+Route::get('/eventos/create', 'EventoController@create');
+Route::post('/eventos/create', 'EventoController@save');
+
+Route::post('/eventos/update/{id}', 'EventoController@update');
