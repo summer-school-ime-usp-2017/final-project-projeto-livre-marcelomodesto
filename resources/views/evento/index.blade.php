@@ -19,6 +19,8 @@
               <tfoot>
                   <a href='/eventos/create'>Adicionar</a>
               </tfoot>
+
+
               <tbody>
               @foreach ($eventos as $evento)
                 <tr>
@@ -29,19 +31,21 @@
                      {{$evento->url}}
                   </td>
                   <td>
+                     {{$evento->website}}
+                  </td>
+                  <td>
                      {{$evento->data_inicio}}
                   </td>
                   <td>
                      {{$evento->data_termino}}
                   </td>
                   <td>
-                    <a href="/eventos/edit/{{ $evento->id }}">Editar</a>
+                    <a href="/evento/edit/{{ $evento->id }}">Editar</a>
                   </td>
               </tr>
               @endforeach
             </tbody>
             </table>
           </div>
-
-
+      </div>
 @endsection

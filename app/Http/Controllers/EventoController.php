@@ -24,6 +24,7 @@ class EventoController extends Controller
     }
 
 
+
     public function store()
     {
       $this->validate(request(), [
@@ -47,13 +48,10 @@ class EventoController extends Controller
         'titulo' => 'required|min:2|max:255',
         'website' => 'required'
       ]);
-
-
       $evento = Evento::find($id);
       $evento -> fill (request()->all());
       $evento->save();
       return redirect ('/eventos');
-
     }
 
 }

@@ -19,7 +19,9 @@
       @endif
 
 
+
       <form action="/eventos/store" method="POST">
+
         {{ csrf_field() }}
 
         <div class="form-group">
@@ -88,5 +90,4 @@
       </form>
     </div>
   </div>
-
 @endsection

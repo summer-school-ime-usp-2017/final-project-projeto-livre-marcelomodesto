@@ -48,7 +48,7 @@
                     <ul class="nav navbar-nav">
                       &nbsp;  <a href='/participantes'>Participantes</a>
                     </ul>
-                    
+
                     <!-- Right Side Of Navbar -->
 
                 </div>

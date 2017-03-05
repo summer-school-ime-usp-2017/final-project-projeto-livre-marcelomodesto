@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 # ROTAS PARA EVENTOS
 Route::get('/eventos', 'EventoController@index');
 Route::get('/eventos/view/{evento}', 'EventoController@show');
